@@ -9,21 +9,14 @@
         <artifactId>wso2</artifactId>
         <version>1</version>
     </parent>
-
+    <packaging>pom</packaging>
     <groupId>org.wso2.carbon.transport</groupId>
-    <artifactId>org.wso2.carbon.transport.http.netty</artifactId>
+    <artifactId>org.wso2.carbon.transport.parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
-    <packaging>bundle</packaging>
-    <name>Carbon Netty HTTP Transport</name>
-    <description>Carbon HTTP Transport based on Netty</description>
-
-    <scm>
-        <url>https://github.com/wso2/carbon-transports.git</url>
-        <developerConnection>scm:git:https://github.com/wso2/carbon-transports.git</developerConnection>
-        <connection>scm:git:https://github.com/wso2/carbon-transports.git</connection>
-        <tag>HEAD</tag>
-    </scm>
+    <modules>
+        <module>http/netty</module>
+    </modules>
 
     <pluginRepositories>
         <pluginRepository>
@@ -233,6 +226,8 @@
         <osgi.framework.import.version.range>[1.8.0, 2.0.0)</osgi.framework.import.version.range>
         <osgi.service.tracker.import.version.range>[1.5.1, 2.0.0)</osgi.service.tracker.import.version.range>
         <slf4j.version>1.7.5</slf4j.version>
+        <carbon.p2.plugin.version>2.0.0-m1</carbon.p2.plugin.version>
+        <carbon.transport.osgi.version>1.0.0.SNAPSHOT</carbon.transport.osgi.version>
     </properties>
 
 </project>
