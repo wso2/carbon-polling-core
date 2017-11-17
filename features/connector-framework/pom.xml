@@ -30,8 +30,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.wso2.carbon.transport</groupId>
+            <groupId>org.wso2.carbon.polling.core</groupId>
             <artifactId>org.wso2.carbon.connector.framework</artifactId>
+            <version>6.0.48-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.wso2.orbit.org.quartz-scheduler</groupId>
