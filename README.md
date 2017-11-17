@@ -1,3 +1,3 @@
 # Welcome to WSO2 Carbon Polling Core 
-This repository holds all the protocol handling implementations for C5 based products. 
+This repository holds the components that perform polling operation for C5 based products. 
 
