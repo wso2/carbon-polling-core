@@ -23,24 +23,20 @@
         <version>5</version>
     </parent>
     <packaging>pom</packaging>
-    <groupId>org.wso2.carbon.transport</groupId>
-    <artifactId>org.wso2.carbon.transport.parent</artifactId>
+    <groupId>org.wso2.carbon.polling.core</groupId>
+    <artifactId>org.wso2.carbon.polling.core.parent</artifactId>
     <version>6.0.48-SNAPSHOT</version>
-    <name>WSO2 Carbon Transport Parent</name>
+    <name>WSO2 Carbon Polling Core Parent</name>
 
     <modules>
-        <module>connector-framework</module>
-        <module>http</module>
-        <module>jms</module>
-        <module>file</module>
-        <module>email</module>
-        <module>features</module>
+        <module>components/connector-framework</module>
+        <module>features/connector-framework</module>
     </modules>
 
     <scm>
-        <url>https://github.com/wso2/carbon-transports.git</url>
-        <developerConnection>scm:git:https://github.com/wso2/carbon-transports.git</developerConnection>
-        <connection>scm:git:https://github.com/wso2/carbon-transports.git</connection>
+        <url>https://github.com/wso2/carbon-polling-core.git</url>
+        <developerConnection>scm:git:https://github.com/wso2/carbon-polling-core.git</developerConnection>
+        <connection>scm:git:https://github.com/wso2/carbon-polling-core.git</connection>
         <tag>HEAD</tag>
     </scm>
 
