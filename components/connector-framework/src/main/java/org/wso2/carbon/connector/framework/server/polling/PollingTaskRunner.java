@@ -61,8 +61,8 @@ public class PollingTaskRunner {
                                     .withSchedule(CronScheduleBuilder.cronSchedule(connector.cronExpression)).build();
         } else {
             // Trigger the job to run on the next round minute
-            trigger = TriggerBuilder.newTrigger().withIdentity("scheduledPoll", "group1").withSchedule(
-                    SimpleScheduleBuilder.simpleSchedule().withIntervalInMilliseconds(connector.interval)
+            trigger = TriggerBuilder.newTrigger().withIdentity("ScheduledPollingTrigger - " + RANDOM.nextLong(), group)
+                    .withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInMilliseconds(connector.interval)
                                          .repeatForever()).build();
         }
 
