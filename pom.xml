@@ -25,7 +25,7 @@
     <packaging>pom</packaging>
     <groupId>org.wso2.carbon.polling.core</groupId>
     <artifactId>org.wso2.carbon.polling.core.parent</artifactId>
-    <version>6.0.48-SNAPSHOT</version>
+    <version>6.0.50-SNAPSHOT</version>
     <name>WSO2 Carbon Polling Core Parent</name>
 
     <modules>
