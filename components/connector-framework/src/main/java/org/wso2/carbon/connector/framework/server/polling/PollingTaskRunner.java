@@ -68,7 +68,8 @@ public class PollingTaskRunner {
 
         // Schedule the job
         try {
-            scheduler = new StdSchedulerFactory(getSchedulerProperties("polling-task-runner")).getScheduler();
+            scheduler = new StdSchedulerFactory(getSchedulerProperties("polling-task-runner-" + RANDOM.nextInt()))
+                    .getScheduler();
             scheduler.getContext().put("connector", connector);
             scheduler.start();
             scheduler.scheduleJob(job, trigger);
